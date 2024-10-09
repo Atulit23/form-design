@@ -36,6 +36,7 @@ export default function FormComponent() {
                 <h5 className='contact__us'>Contact Us</h5>
                 <h2 className='make__appointment'>Make an Appointment</h2>
                 <h2 className='book__apointment'>Book Appointment</h2>
+                {/* For the web version */}
                 <Form
                     name='appointment-form'
                     className='form__main'
@@ -51,7 +52,6 @@ export default function FormComponent() {
                         ]}
                         className='form__item'
                     >
-                        {/* <span>Full Name *</span> */}
                         <Input placeholder='Full Name *' className='input' />
                     </Form.Item>
                     <Form.Item
@@ -68,7 +68,6 @@ export default function FormComponent() {
                         ]}
                         className='form__item'
                     >
-                        {/* <span>Full Name</span> */}
                         <Input placeholder='Email *' className='input' />
                     </Form.Item>
                     <Form.Item
@@ -101,6 +100,7 @@ export default function FormComponent() {
                     </Form.Item>
 
                 </Form>
+                {/* For the phone version, created this because layout inline won't allow for labels & input to come in vertically */}
                 <Form
                     name='appointment-form'
                     className='form__phone'
